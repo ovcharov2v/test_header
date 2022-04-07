@@ -1,0 +1,50 @@
+.mobile-drawer
+	.mobile-drawer__backdrop
+	.mobile-drawer__box
+		.mobile-drawer__top
+			p.mobile-drawer__title Меню
+			.lang.mobile-drawer__lang
+				span.lang__current Ru
+				ul.menu-box.lang__list
+					li.menu-box__elem.lang__elem.lang__elem--selected
+						a.menu-box__link.lang__link(href="#") Ru
+					li.menu-box__elem.lang__elem
+						a.menu-box__link.lang__link(href="#") En
+			form.search-form.search-form--gray.mobile-drawer__search-form(action="#")
+				input.search-form__input(type="text", placeholder="Поиск...")
+				button.search-form__submit(type="submit", aria-label="Search")
+					span.search-form__icon
+						+svg("search")
+		nav.mobile-drawer__nav.mobile-menu
+			ul.mobile-menu__list
+				li.mobile-menu__elem
+					a.mobile-menu__link(href="#") Каталог
+				li.mobile-menu__elem.mobile-menu__elem--with-sub-menu.mobile-menu__elem--opened
+					span.mobile-menu__link Майнинг отель
+					ul.mobile-menu__sub-list
+						li.mobile-menu__elem.mobile-menu__sub-elem
+							a.mobile-menu__link(href="#") Калининская АЭС
+						li.mobile-menu__elem.mobile-menu__elem--current.mobile-menu__sub-elem
+							a.mobile-menu__link(href="#") ПАО «Тулачермет»
+				li.mobile-menu__elem
+					a.mobile-menu__link(href="#") Лизинг
+				li.mobile-menu__elem
+					a.mobile-menu__link(href="#") О компании
+				li.mobile-menu__elem
+					a.mobile-menu__link(href="#") Новости и блог
+				li.mobile-menu__elem
+					a.mobile-menu__link(href="#") Оплата и доставка
+				li.mobile-menu__elem
+					a.mobile-menu__link(href="#") Контакты
+				li.mobile-menu__elem
+					a.mobile-menu__link(href="#") Вакансии
+		.mobile-drawer__contacts.contacts
+			.contacts__phone-wrapper
+				a.contacts__phone(href="tel:+74998774145") +7 (499) 877-41-45
+			a.contacts__get-call(href="#") Заказать звонок
+			a.contacts__messenger-link.contacts__messenger-link--telegram(href="https://telegram.me/USERNAME", title="telegram")
+				span.contacts__icon
+					+svg("telegram")
+			a.contacts__messenger-link.contacts__messenger-link--whatsapp(href="https://wa.me/74998774145", title="whatsapp")
+				span.contacts__icon
+					+svg("whatsapp")

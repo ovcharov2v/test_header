@@ -1,0 +1,29 @@
+.menu-box {
+	padding: 8px 0;
+	border-radius: 5px;
+	background-color: $color-white;
+	list-style-type: none;
+	filter: drop-shadow(0 96px 60px rgba(#000, .0072))
+			drop-shadow(0 48px 30px rgba(#000, .01))
+			drop-shadow(0 29px 18px rgba(#000, .012))
+			drop-shadow(0 19px 12px rgba(#000, .015))
+			drop-shadow(0 12px 8px rgba(#000, .017))
+			drop-shadow(0 0px 5px rgba(#000, .02))
+			drop-shadow(0 4px 3px rgba(#000, .022))
+			drop-shadow(0 2px 1px rgba(#000, .03));
+
+	&__elem { // .menu-box__elem
+		display: block;
+	}
+
+	&__link { // .menu-box__link
+		display: block;
+		text-decoration: none;
+		transition: color $transition-default, background-color $transition-default;
+
+		&:hover {
+			color: $color-blue-hover;
+			background-color: #F7F9FE;
+		}
+	}
+}

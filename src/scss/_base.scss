@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding-top: 50px;
+	font-family: $font-primary;
+
+	@media (min-width: $desktop-min) {
+		padding-top: 99px;
+	}
+
+	&.mobile-menu-opened {
+		overflow: hidden;
+	}
+}
+
+a,
+button {
+	cursor: pointer;
+}
+
+svg {
+	max-height: 100%;
+	max-width: 100%;
+}

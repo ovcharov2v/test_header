@@ -1,0 +1,39 @@
+.secondary-menu {
+	&__list { // .secondary-menu__list
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding-left: 0;
+		font-size: 12px;
+		line-height: 18px;
+		list-style-type: none;
+	}
+
+	&__elem { // .secondary-menu__elem
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			&::after {
+				display: inline-block;
+				width: 1px;
+				height: 20px;
+				background-color: rgba(#fff, .1);
+				content: "";
+			}
+		}
+	}
+
+	&__link { // .secondary-menu__link
+		display: inline-block;
+		margin: 0 5px;
+		padding: 11px 20px;
+		color: rgba($color-white, .8);
+		transition: color $transition-default;
+		text-decoration: none;
+
+		&:hover {
+			color: $color-white;
+		}
+	}
+}

@@ -1,0 +1,85 @@
+.lang {
+	position: relative;
+	z-index: 10;
+	padding: 10px;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 600;
+	cursor: pointer;
+
+	&__current { // .lang__current
+		position: relative;
+		display: flex;
+		padding-right: 9px;
+		color: rgba($color-dark-blue, .5);
+		text-transform: uppercase;
+		transition: color $transition-default;
+
+		@media (min-width: $tablet-min) {
+			padding-right: 7px;
+		}
+
+		.lang:hover & {
+			color: $color-blue;
+		}
+
+		&::after {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%) translateY(1px);
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 7px 3.5px 0 3.5px;
+			border-color: #008df8 transparent transparent transparent;
+			content: "";
+			transform-origin: 50%;
+			transition: transform $transition-default;
+
+			@media (min-width: $tablet-min) {
+				border-width: 4px 2px 0 2px;
+			}
+
+			.lang:hover & {
+				transform: translateY(-50%) scaleY(-1);
+			}
+		}
+
+		.lang--white & {
+			color: rgba($color-white, .5);
+		}
+
+		.lang--white:hover & {
+			color: $color-white;
+		}
+	}
+
+	&__list { // .lang__list
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 10px;
+		width: 51px;
+		margin: -6px 0 0;
+
+		.lang:hover & {
+			display: block;
+		}
+	}
+
+	&__link { // .lang__link
+		padding: 5px 16px;
+		color: rgba($color-dark-blue, .5);
+		text-transform: uppercase;
+		transition: color $transition-default;
+
+		&:hover {
+			color: $color-blue-hover;
+		}
+
+		.lang__elem--selected & {
+			color: $color-blue;
+		}
+	}
+}

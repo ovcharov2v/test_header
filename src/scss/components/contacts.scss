@@ -1,0 +1,134 @@
+.contacts {
+	display: grid;
+	grid-template-columns: auto 32px 32px;
+	grid-template-rows: repeat(2, auto);
+	grid-column-gap: 10px;
+	border-top: 1px solid rgba(#AAB1B7, .1);
+
+	@media (min-width: $tablet-min) {
+		grid-template-columns: 24px 24px auto;
+		grid-column-gap: 14px;
+		max-width: 200px;
+		border-top-width: 0;
+		text-align: right;
+	}
+
+	@media (min-width: $desktop-min) {
+		grid-column-gap: 4px;
+		max-width: 172px;
+	}
+
+	&__phone-wrapper { // .contacts__phone-wrapper
+		@media (min-width: $desktop-min) {
+			grid-column-start: 1;
+			grid-column-end: -1;
+		}
+	}
+
+	&__phone { // .contacts__phone
+		font-size: 22px;
+		line-height: 32px;
+		font-weight: 600;
+		color: $color-blue;
+		text-decoration: none;
+		letter-spacing: 0.005em;
+		transition: color $transition-default;
+
+		&:hover {
+			color: $color-blue-hover;
+		}
+
+		@media (min-width: $tablet-min) {
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 400;
+			color: $color-dark-blue;
+		}
+
+		@media (min-width: $desktop-min) {
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 600;
+		}
+	}
+
+	&__get-call { // .contacts__get-call
+		order: 3;
+		font-size: 14px;
+		line-height: 32px;
+		color: rgba($color-dark-blue, .5);
+		text-decoration: none;
+		transition: color $transition-default;
+
+		&:hover {
+			color: $color-blue-hover;
+		}
+
+		@media (min-width: $tablet-min) {
+			font-size: 12px;
+			line-height: 18px;
+			padding-left: 4px;
+		}
+
+		@media (min-width: $desktop-min) {
+			font-size: 14px;
+			line-height: 24px;
+		}
+	}
+
+	&__icon { // .contacts__icon
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__messenger-link { // .contacts__messenger-link
+		grid-row-start: 1;
+		grid-row-end: -1;
+		width: 32px;
+		height: 32px;
+		color: rgba($color-dark-blue, .5);
+		text-decoration: none;
+		transition: color $transition-default;
+
+		@media (min-width: $tablet-min) {
+			display: flex;
+			align-items: center;
+			width: 24px;
+			height: 24px;
+			margin: auto 0;
+		}
+
+		@media (min-width: $desktop-min) {
+			margin: 0;
+			grid-row-start: 2;
+			grid-row-end: 3;
+		}
+
+		&:hover {
+			color: $color-blue-hover;
+		}
+
+		&--telegram { // .contacts__messenger-link--telegram
+			grid-column-start: 2;
+			grid-column-end: 3;
+
+			@media (min-width: $tablet-min) {
+				order: 1;
+				grid-column-start: 1;
+				grid-column-end: 2;
+			}
+		}
+
+		&--whatsapp { // .contacts__messenger-link--whatsapp
+			grid-column-start: 3;
+			grid-column-end: 4;
+
+			@media (min-width: $tablet-min) {
+				order: 2;
+				grid-column-start: 2;
+				grid-column-end: 3;
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+extends pug/base
+
+prepend vars
+	-
+		var title = "Page title"
+		var description = "Page description"
+
+append vars
+	//-
+
+block content
+	include pug/components/header
+	.section
+		.container.section__container

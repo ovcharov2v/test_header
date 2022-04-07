@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Page description">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="og:title" content="Page title">
+		<meta property="og:description" content="Page description">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Page title">
+		<meta name="twitter:description" content="Page description">
+		<title>Page title</title>
+		<link rel="stylesheet" href="./css/main.css?v=1649369422546">
+	</head>
+	<body>
+		<header class="header">
+			<!-- Top row-->
+			<div class="header__dark-row">
+				<div class="container header__dark-row-container">
+					<div class="lang lang--white header__lang"><span class="lang__current">Ru</span>
+						<ul class="menu-box lang__list">
+							<li class="menu-box__elem lang__elem lang__elem--selected"><a class="menu-box__link lang__link" href="#">Ru</a></li>
+							<li class="menu-box__elem lang__elem"><a class="menu-box__link lang__link" href="#">En</a></li>
+						</ul>
+					</div>
+					<nav class="header__dark-row-nav secondary-menu">
+						<ul class="secondary-menu__list">
+							<li class="secondary-menu__elem"><a class="secondary-menu__link" href="#">Новости и блог</a></li>
+							<li class="secondary-menu__elem"><a class="secondary-menu__link" href="#">Оплата и доставка</a></li>
+							<li class="secondary-menu__elem"><a class="secondary-menu__link" href="#">Контакты</a></li>
+							<li class="secondary-menu__elem"><a class="secondary-menu__link" href="#">Вакансии</a></li>
+						</ul>
+					</nav>
+					<form class="search-form header__search-form" action="#">
+						<input class="search-form__input" type="text" placeholder="Поиск...">
+						<button class="search-form__submit" type="submit" aria-label="Search"><span class="search-form__icon">
+								<svg>
+									<use xlink:href="./images/sprites.svg#search"></use>
+								</svg></span></button>
+					</form>
+				</div>
+			</div>
+			<div class="header__light-row">
+				<div class="container header__light-row-container"><a class="header__logo-link" href="/"><img class="header__logo-image" src="images/logo.svg" alt="Intelion"></a>
+					<div class="lang header__lang header__lang--on-light-row"><span class="lang__current">Ru</span>
+						<ul class="menu-box lang__list">
+							<li class="menu-box__elem lang__elem lang__elem--selected"><a class="menu-box__link lang__link" href="#">Ru</a></li>
+							<li class="menu-box__elem lang__elem"><a class="menu-box__link lang__link" href="#">En</a></li>
+						</ul>
+					</div>
+					<nav class="header__light-row-nav primary-menu">
+						<ul class="primary-menu__list">
+							<li class="primary-menu__elem"><a class="primary-menu__link" href="#">Каталог</a></li>
+							<li class="primary-menu__elem primary-menu__elem--with-sub-menu"><span class="primary-menu__link">Майнинг отель<span class="primary-menu__link-icon">
+										<svg>
+											<use xlink:href="./images/sprites.svg#chevron-down"></use>
+										</svg></span></span>
+								<div class="primary-menu__sub-menu">
+									<ul class="menu-box primary-menu__sub-list">
+										<li class="menu-box__elem primary-menu__sub-elem"><a class="menu-box__link primary-menu__sub-link" href="#">Калининская АЭС</a></li>
+										<li class="menu-box__elem primary-menu__sub-elem"><a class="menu-box__link primary-menu__sub-link" href="#">ПАО “Тулачермет”</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="primary-menu__elem"><a class="primary-menu__link" href="#">Лизинг</a></li>
+							<li class="primary-menu__elem"><a class="primary-menu__link" href="#">О компании</a></li>
+						</ul>
+					</nav>
+					<div class="contacts header__contacts">
+						<div class="contacts__phone-wrapper"><a class="contacts__phone" href="tel:+74998774145">+7 (499) 877-41-45</a></div><a class="contacts__get-call" href="#">Заказать звонок</a><a class="contacts__messenger-link contacts__messenger-link--telegram" href="https://telegram.me/USERNAME" title="telegram"><span class="contacts__icon">
+								<svg>
+									<use xlink:href="./images/sprites.svg#telegram"></use>
+								</svg></span></a><a class="contacts__messenger-link contacts__messenger-link--whatsapp" href="https://wa.me/74998774145" title="whatsapp"><span class="contacts__icon">
+								<svg>
+									<use xlink:href="./images/sprites.svg#whatsapp"></use>
+								</svg></span></a>
+					</div><a class="header__shopping-cart shopping-cart" href="#">
+						<div class="shopping-cart__icon-box">
+							<div class="shopping-cart__icon">
+								<svg>
+									<use xlink:href="./images/sprites.svg#shopping-bag"></use>
+								</svg>
+							</div><span class="shopping-cart__counter">2</span>
+						</div><span class="shopping-cart__text">Корзина</span></a>
+					<button class="header__show-menu-btn js-show-menu" aria-label="Show menu"><span class="header__show-menu-btn-icon header__show-menu-btn-icon--burger">
+							<svg>
+								<use xlink:href="./images/sprites.svg#burger"></use>
+							</svg></span><span class="header__show-menu-btn-icon header__show-menu-btn-icon--cross">
+							<svg>
+								<use xlink:href="./images/sprites.svg#cross"></use>
+							</svg></span></button>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-drawer">
+			<div class="mobile-drawer__backdrop"></div>
+			<div class="mobile-drawer__box">
+				<div class="mobile-drawer__top">
+					<p class="mobile-drawer__title">Меню</p>
+					<div class="lang mobile-drawer__lang"><span class="lang__current">Ru</span>
+						<ul class="menu-box lang__list">
+							<li class="menu-box__elem lang__elem lang__elem--selected"><a class="menu-box__link lang__link" href="#">Ru</a></li>
+							<li class="menu-box__elem lang__elem"><a class="menu-box__link lang__link" href="#">En</a></li>
+						</ul>
+					</div>
+					<form class="search-form search-form--gray mobile-drawer__search-form" action="#">
+						<input class="search-form__input" type="text" placeholder="Поиск...">
+						<button class="search-form__submit" type="submit" aria-label="Search"><span class="search-form__icon">
+								<svg>
+									<use xlink:href="./images/sprites.svg#search"></use>
+								</svg></span></button>
+					</form>
+				</div>
+				<nav class="mobile-drawer__nav mobile-menu">
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__elem"><a class="mobile-menu__link" href="#">Каталог</a></li>
+						<li class="mobile-menu__elem mobile-menu__elem--with-sub-menu mobile-menu__elem--opened"><span class="mobile-menu__link">Майнинг отель</span>
+							<ul class="mobile-menu__sub-list">
+								<li class="mobile-menu__elem mobile-menu__sub-elem"><a class="mobile-menu__link" href="#">Калининская АЭС</a></li>
+								<li class="mobile-menu__elem mobile-menu__elem--current mobile-menu__sub-elem"><a class="mobile-menu__link" href="#">ПАО «Тулачермет»</a></li>
+							</ul>
+						</li>
+						<li class="mobile-menu__elem"><a class="mobile-menu__link" href="#">Лизинг</a></li>
+						<li class="mobile-menu__elem"><a class="mobile-menu__link" href="#">О компании</a></li>
+						<li class="mobile-menu__elem"><a class="mobile-menu__link" href="#">Новости и блог</a></li>
+						<li class="mobile-menu__elem"><a class="mobile-menu__link" href="#">Оплата и доставка</a></li>
+						<li class="mobile-menu__elem"><a class="mobile-menu__link" href="#">Контакты</a></li>
+						<li class="mobile-menu__elem"><a class="mobile-menu__link" href="#">Вакансии</a></li>
+					</ul>
+				</nav>
+				<div class="mobile-drawer__contacts contacts">
+					<div class="contacts__phone-wrapper"><a class="contacts__phone" href="tel:+74998774145">+7 (499) 877-41-45</a></div><a class="contacts__get-call" href="#">Заказать звонок</a><a class="contacts__messenger-link contacts__messenger-link--telegram" href="https://telegram.me/USERNAME" title="telegram"><span class="contacts__icon">
+							<svg>
+								<use xlink:href="./images/sprites.svg#telegram"></use>
+							</svg></span></a><a class="contacts__messenger-link contacts__messenger-link--whatsapp" href="https://wa.me/74998774145" title="whatsapp"><span class="contacts__icon">
+							<svg>
+								<use xlink:href="./images/sprites.svg#whatsapp"></use>
+							</svg></span></a>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="container section__container"></div>
+		</div>
+		<script src="./js/main.js?v=1649369422546"></script>
+	</body>
+</html>
